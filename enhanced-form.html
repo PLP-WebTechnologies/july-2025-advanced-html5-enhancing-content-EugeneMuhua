@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Content & Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        header, main, footer {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+        }
+        header {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        ul, ol {
+            margin: 0 0 15px 20px;
+        }
+        form {
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            background-color: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            padding: 10px 15px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #0055aa;
+        }
+        video, audio, img {
+            display: block;
+            max-width: 100%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mobotech Technology Academy</h1>
+    <p>You give us learners we give you engineers.<br> Stick around and enjoy this learning journey.</p>
+</header>
+
+
+<main>
+    <section>
+        <h2>One of the languages we will explore is HTML 5. Top 5 HTML5 features include:</h2>
+        <ul>
+            <li>Semantic elements for better structure</li>
+            <li>Built-in form validation</li>
+            <li>Media embedding without plugins</li>
+            <li>Canvas for graphics and animations</li>
+            <li>Local storage for offline capabilities</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Popular Web Development Languages in 2025</h2>
+        <ol>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>TypeScript</li>
+            <li>PHP</li>
+            <li>Ruby</li>
+            <li>Java</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Web Development Roles & Salaries</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Role</th>
+                    <th>Average Salary (USD)</th>
+                    <th>Required Skills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Front-End Developer</td>
+                    <td>$75,000</td>
+                    <td>HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Back-End Developer</td>
+                    <td>$85,000</td>
+                    <td>Node.js, Databases, APIs</td>
+                </tr>
+                <tr>
+                    <td>Full-Stack Developer</td>
+                    <td>$95,000</td>
+                    <td>Front-End + Back-End Skills</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Learning Environment</h2>
+        <img src="tech.jpg" alt="Placeholder Image of Code">
+        <audio controls>
+            <source src="mobospeech.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="600">
+            <source src="mobovid.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <section>
+        <h2>Contact & Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required minlength="2">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required minlength="2">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="5" autocomplete="username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" autocomplete="new-password">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Subscribe to our newsletter
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Built by Mobotech</p>
+</footer>
+
+</body>
+</html>
